@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Game Planing </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="calCulator">
+
+        <form action="" name="form" class="form">
+            <input type="text" class="form-control main_bar" name='display' value="0" id="input">
+            <div class="buttonArea">
+                <div class="line">
+                    <input type="button" class="btn btn-primary mb-1" name="btn" value="7"
+                        onclick="calculate(this.value)">
+                    <input type="button" class="btn btn-primary mb-1" name="btn" value="8"
+                        onclick="calculate(this.value)">
+                    <input type="button" class="btn btn-primary mb-1" name="btn" value="9"
+                        onclick="calculate(this.value)">
+                    <input type="button" class="btn btn-danger mb-1" name="btn" value="+"
+                        onclick="calculate(this.value)">
+                </div>
+                <div class="line">
+                    <input type="button" class="btn btn-primary mb-1" name="btn" value="4"
+                        onclick="calculate(this.value)">
+                    <input type="button" class="btn btn-primary mb-1" name="btn" value="5"
+                        onclick="calculate(this.value)">
+                    <input type="button" class="btn btn-primary mb-1" name="btn" value="6"
+                        onclick="calculate(this.value)">
+                    <input type="button" class="btn btn-danger mb-1" name="btn" value="-"
+                        onclick="calculate(this.value)">
+                </div>
+                <div class="line">
+                    <input type="button" class="btn btn-primary mb-1" name="btn" value="1"
+                        onclick="calculate(this.value)">
+                    <input type="button" class="btn btn-primary mb-1" name="btn" value="2"
+                        onclick="calculate(this.value)">
+                    <input type="button" class="btn btn-primary mb-1" name="btn" value="3"
+                        onclick="calculate(this.value)">
+                    <input type="button" class="btn btn-danger mb-1" name="btn" value="*"
+                        onclick="calculate(this.value)">
+                </div>
+                <div class="line">
+                    <input type="button" class="btn btn-primary mb-1" name="btn" value="0"
+                        onclick="calculate(this.value)">
+                    <input type="button" class="btn btn-primary mb-1" name="btn" value="00"
+                        onclick="calculate(this.value)">
+                    <input type="button" class="btn btn-primary mb-1" name="btn" value="."
+                        onclick="calculate(this.value)">
+                    <input type="button" class="btn btn-danger mb-1" name="btn" value="/"
+                        onclick="calculate(this.value)">
+                </div>
+                <div class="last">
+                    <input type="button" class="btn btn-success mb-1" name="btn" value="C"
+                        onclick="display.value = null ">
+
+
+                    <input type="button" class="btn btn-dark mb-1" name="btn" value="="
+                        onclick="display.value = eval(display.value)">
+
+                </div>
+
+
+
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
